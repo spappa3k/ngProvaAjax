@@ -3,8 +3,8 @@
       <div class="col-md-8">
         <h2 class="text-center mb-4">Posts List</h2>
         <ul class="list-group">
-          <li class="list-group-item" *ngFor="let post of posts">
-            <h5>{{ post.title }}</h5>
+          <li class="list-group-item" *ngFor="let post of posts; let i=index" >
+            <h5>{{ post.title }}</h5> <a  *ngIf="i<5" [routerLink]="['/posts',post.id]"> view details</a>
           </li>
         </ul>
       </div>

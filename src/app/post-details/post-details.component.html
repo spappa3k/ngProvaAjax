@@ -1,0 +1,9 @@
+<p>Details</p>
+<div *ngIf="PostDetails.length">
+  <div *ngFor="let postDetail of PostDetails">
+    <p>Id: {{ postDetail.id }}</p>
+    <p>Body: {{ postDetail.body }}</p>
+    <p>Email: {{ postDetail.email }}</p>
+    <hr>
+  </div>
+</div>

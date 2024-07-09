@@ -16,7 +16,6 @@ constructor(public ps:PostsService){}
 ngOnInit(): void {
   this.ps.generateList().subscribe(data=>{
     this.posts=data;
-    console.log(this.posts);
     })
 }
 
